@@ -5,16 +5,16 @@ const path = require("path");
 const routes = require("./routes");
 require("dotenv").config();
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "front-end/build")));
 app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 const PORT = process.env.PORT || 3009;
 let mdb = process.env.MONGODB_URI;
 
-mongoose.connect(mdb, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
-    console.log(`Database connected successfully`);
-}).catch(err => console.log(err));
+// mongoose.connect(mdb, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+//     console.log(`Database connected successfully`);
+// }).catch(err => console.log(err));
 
 app.get("*", (req, res) => res.sendFile(path.join(__dirname, "front-end", "build", "index.html")));
 
