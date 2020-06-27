@@ -1,0 +1,27 @@
+{
+  "name": "portfolio4",
+  "version": "1.0.0",
+  "description": "my new site.jpeg",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "cd front-end && npm install --only=dev && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeardedBeauty/portfolio4.git"
+  },
+  "author": "john ochs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeardedBeauty/portfolio4/issues"
+  },
+  "homepage": "https://github.com/BeardedBeauty/portfolio4#readme"
+}
