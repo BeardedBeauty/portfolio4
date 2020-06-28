@@ -1,0 +1,100 @@
+.navbgtop {
+    height: 100px;
+    background-color: #5f2dbb;
+}
+
+.navbgscroll {
+    background-color: #ffffffd5;
+    height: 70px;
+}
+
+.nav {
+    transition: .2s;
+    position: fixed;
+    width: 100%;
+    z-index: 10
+}
+
+.mobilenav {
+    display: none;
+}
+
+.itemsContainer {
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.trans {
+    transition: .2s;
+}
+
+.nameitemstop {
+    font-size: 46px;
+    color: #f1fdff;
+    margin-top: 20px;
+}
+
+.nameitemsscroll {
+    font-size: 32px;
+    color: #79a0a8;
+    margin-top: 15px;
+}
+
+.navlink {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.navitemstop {
+    height: 100%;
+    cursor: pointer;
+    float: left;
+    padding: 38px;
+    color: #a6dce7;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+.navitemstop:hover {
+    height: 100%;
+    cursor: pointer;
+    float: left;
+    background-color: #8049ff;
+    color: #e7fbff;
+}
+
+.navitemsscroll {
+    height: 100%;
+    cursor: pointer;
+    float: left;
+    padding: 26px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #274652;
+}
+
+.navitemsscroll:hover {
+    background-color: #822ae7;
+    padding-top: 30px;
+    height: 110%;
+    color: #ffffff;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (max-width: 999px) {
+    .itemsContainer, .navbgscroll, .navbgtop {
+        display: none;
+    }
+
+    .mobilenav {
+        display: block;
+        background-color: #5f2dbb;
+        transition: .2s;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+}
