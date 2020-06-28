@@ -1,11 +1,16 @@
 .freight {
-  height: 2000px;
+  overflow: auto;
   width: 100%;
   background-color: #ffffff;
   display: block;
   z-index: 1;
+}
+
+.everythingContainer {
   position: absolute;
   margin-top: 60%;
+  width: 100%;
+  z-index: 1;
 }
 
 .loco {
@@ -44,6 +49,34 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+}
+
+.clearfix {
+  width: 100%;
+  overflow: auto;
+}
+
+.button1 {
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    padding: 20px;
+    background-color: #5f2dbb;
+    color: #eee6ff;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, #5f2dbb 62%, rgba(34,230,255,1) 100%); */
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button1:hover {
+  background-color: #a37bff;
+  /* background: rgb(2,0,36);
+  background: linear-gradient(0deg, #0b00df 0%, #5f2dbb 62%, rgba(34,230,255,1) 100%); */
+  color: #ffffff;
 }
 
 @media screen and (max-width: 999px) {

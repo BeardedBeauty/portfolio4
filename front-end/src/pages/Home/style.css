@@ -6,6 +6,23 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.miniTitle {
+    margin-top: 0;
+    font-size: 60px;
+    color: #1ee01e;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.subtitle {
+    height: 120px;
+  /* position: relative; */
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  background-color: #000000e5;
+  padding-top: 50px;
+}
+
 .subheader {
     margin-top: 0px;
     font-size: 20px;
@@ -44,6 +61,12 @@
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 0;
+}
+
+.buttonContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 999px) {
@@ -94,6 +117,11 @@
         max-width: 60%;
         height: auto;
         border-radius: 100%;
+    }
+
+    .miniTitle {
+        margin-top: 10px;
+        font-size: 45px;
     }
 }
 /* .freight {

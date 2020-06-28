@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import bgimg from "../../assets/bg.jpg";
 import me from "../../assets/tree2.png";
+import resume from "../../assets/resumeDev7.pdf"
 
 function Home(props) {
     return (
@@ -22,18 +23,31 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-            <div className="freight">
-                <div className="intermodal">
-                    <div className="meholder">
-                        <img src={me} id="me" />
+            <div className="everythingContainer">
+                <div className="freight">
+                    <div className="intermodal">
+                        <div className="meholder">
+                            <img src={me} id="me" />
+                        </div>
+                        <div className="biocontainer">
+                            <p id="bio">
+                                I am a graduate from the University of Minnesota Coding Bootcamp, building full-stack websites and apps for both personal and professional use.
+                                Building websites is not only my job, it is my hobby as well.
+                                My freelance experience gives an abundance of resources, effectively mining the best code for individual projects based on customer needs and requirements.
+                                If you are game for a new, professional website, so am I.
+                            </p>
+                        </div>
+                        <div className="clearfix">
+                            <a href={resume}><div className="button1 trans buttonContainer">VIEW RESUME</div></a>
+                        </div>
                     </div>
-                    <div className="biocontainer">
-                        <p id="bio">
-                            I am a graduate from the University of Minnesota Coding Bootcamp, building full-stack websites and apps for both personal and professional use.
-                            Building websites is not only my job, it is my hobby as well.
-                            My freelance experience gives an abundance of resources, effictively mining the best code for individual projects based on customer needs and requirements.
-                            If you are game for a new, professional website, so am I.
-                        </p>
+                </div>
+                <div className="subtitle">
+                    <p className="miniTitle">{"<Portfolio/>"}</p>
+                </div>
+                <div className="freight">
+                    <div className="intermodal">
+
                     </div>
                 </div>
             </div>
