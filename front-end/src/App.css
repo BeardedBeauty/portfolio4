@@ -79,6 +79,38 @@
   color: #ffffff;
 }
 
+.projContainer {
+  position: relative;
+  width: 40%;
+  margin: 0 5% 50px 5%;
+  float: left;
+  /* max-width: 300px; */
+}
+
+.project {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: #000000;
+  background: #000000c0; /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+.projContainer:hover .overlay {
+  opacity: 1;
+}
+
 @media screen and (max-width: 999px) {
   .intermodal {
     width: 100%;

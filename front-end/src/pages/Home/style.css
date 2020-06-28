@@ -69,6 +69,19 @@
     text-decoration: none;
 }
 
+.subMiniTitle {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    font-size: 40px;
+    color: #1ee01e;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#portfolio {
+    background-color: #14102e;
+}
+
 @media screen and (max-width: 999px) {
     .subheader {
         margin-top: 0px;
