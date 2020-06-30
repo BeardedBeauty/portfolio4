@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import api from "../../utils/api";
 import "./style.css";
 
-function Footer() {
+function Footer(props) {
     const [name, box1] = useState("")
     const [email, box2] = useState("")
     const [content, box3] = useState("")
@@ -13,6 +13,10 @@ function Footer() {
 
     return (
         <footer>
+            <div className="subtitle">
+                {props.scroll}
+                <p className="miniTitle">{"<Contact/>"}</p>
+            </div>
             <div id="footerContainer" className="freight">
                 <div className="intermodal">
                     <div className="messageContainer">

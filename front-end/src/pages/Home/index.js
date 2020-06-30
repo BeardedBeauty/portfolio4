@@ -16,6 +16,7 @@ import facepalm from "../../assets/facepalm.png";
 function Home(props) {
     return (
         <>
+            {props.top}
             <div className="bacgroundcontainer">
                 <img src={bgimg} id="defaultbackground" />
                 {/* <img src="https://images3.alphacoders.com/773/773135.jpg" id="defaultbackground" /> */}
@@ -52,6 +53,7 @@ function Home(props) {
                     </div>
                 </div>
                 <div className="subtitle">
+                    {props.portfolio}
                     <p className="miniTitle">{"<Portfolio/>"}</p>
                 </div>
                 <div id="portfolio" className="freight">
@@ -71,7 +73,7 @@ function Home(props) {
                         <Project source={facepalm} title={"FacePalm"} link={"https://face--palm.herokuapp.com"} gitlink={"https://github.com/BeardedBeauty/FacePalm"} />
                     </div>
                 </div>
-                <Footer />
+                <Footer scroll={props.contact} />
             </div>
         </>
     )
