@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "../../components/Project";
+import Footer from "../../components/Footer"
 import "./style.css";
 import bgimg from "../../assets/bg.jpg";
 import me from "../../assets/tree2.png";
@@ -70,6 +71,7 @@ function Home(props) {
                         <Project source={facepalm} title={"FacePalm"} link={"https://face--palm.herokuapp.com"} gitlink={"https://github.com/BeardedBeauty/FacePalm"} />
                     </div>
                 </div>
+                <Footer />
             </div>
         </>
     )
