@@ -1,3 +1,57 @@
+.contactInput {
+    width: 100%;
+    display: block;
+    background-color: #4400c4;
+    color: #0be616;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+}
+
+.contactInput:hover {
+    background-color: #4d00db;
+}
+
+.messageContainer {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#message {
+    height: 100px;
+}
+
 #footerContainer {
-    background-color: #081d17;
+    color: #9961ff;
+    background-color: #280172;   
+    padding-bottom: 20px;
+}
+
+#footerContainer2 {
+    background-color: #27174e;
+    color: #4e2f9b;
+    text-align: center;
+}
+
+#certbox {
+    width: 30%;
+    text-align: center;
+    color: #bbbbbb;
+    float: left;
+}
+
+#infobox {
+    width: 70%;
+    text-align: center;
+    color: #a6c9ff;
+    float: left;
+}
+
+@media screen and (max-width: 999px) {
+    #certbox, #infobox {
+        width: 100%;
+    }
 }
