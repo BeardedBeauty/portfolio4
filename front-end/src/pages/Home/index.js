@@ -10,6 +10,7 @@ import cheese from "../../assets/cheese.png";
 import mac from "../../assets/mac.png";
 import tm3k from "../../assets/tm3k.png";
 import wgs from "../../assets/wgs.png";
+import facepalm from "../../assets/facepalm.png";
 
 function Home(props) {
     return (
@@ -62,10 +63,11 @@ function Home(props) {
                         <div className="subMiniTitle">
                             <p>{`{Personal Projects}`}</p>
                         </div>
-                        <Project source={bookke} title={"Bøokké"} link={"https://writeguyservices.herokuapp.com/"} />
-                        <Project source={bandaid} title={"Band Aid"} link={"http://www.martysartscontinuum.com"} />
-                        <Project source={cheese} title={"Shuffled Cheese"} link={"https://writeguyservices.herokuapp.com/"} />
-                        <Project source={tm3k} title={"Taskmaster3000"} link={"http://www.martysartscontinuum.com"} />
+                        <Project source={bookke} title={"Bøokké"} link={"https://bookkemark.herokuapp.com"} gitlink={"https://github.com/BeardedBeauty/BookFinder"} />
+                        <Project source={bandaid} title={"Band Aid"} link={"https://ryanholt22.github.io/Band-Aid/"} gitlink={"https://github.com/ryanholt22/Band-Aid"} />
+                        <Project source={cheese} title={"Shuffled Cheese"} link={"https://writeguyservices.herokuapp.com/"} gitlink={"https://github.com/BeardedBeauty/Shuffleables"} />
+                        <Project source={tm3k} title={"Taskmaster3000"} link={"https://taskmaster3000.herokuapp.com"} gitlink={"https://github.com/BeardedBeauty/Boards-of-Canada"} />
+                        <Project source={facepalm} title={"FacePalm"} link={"https://face--palm.herokuapp.com"} gitlink={"https://github.com/BeardedBeauty/FacePalm"} />
                     </div>
                 </div>
             </div>
