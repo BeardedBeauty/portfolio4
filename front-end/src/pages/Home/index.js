@@ -4,7 +4,7 @@ import Footer from "../../components/Footer"
 import "./style.css";
 import bgimg from "../../assets/bg.jpg";
 import me from "../../assets/tree2.png";
-import resume from "../../assets/resumeDev7.pdf";
+import resume from "../../assets/John Ochs Résumé.pdf";
 import bookke from "../../assets/bookke.png";
 import bandaid from "../../assets/bandaid.png";
 import cheese from "../../assets/cheese.png";
@@ -18,8 +18,8 @@ function Home(props) {
         <>
             {props.top}
             <div className="bacgroundcontainer">
-                <img src={bgimg} id="defaultbackground" />
-                {/* <img src="https://images3.alphacoders.com/773/773135.jpg" id="defaultbackground" /> */}
+                {/* <img src={bgimg} id="defaultbackground" /> */}
+                <img src="https://images3.alphacoders.com/773/773135.jpg" id="defaultbackground" />
             </div>
             <div className="loco">
                 <div className="header">

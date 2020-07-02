@@ -17,7 +17,7 @@ module.exports = {
         let mailOptions = {
             from: "",//req.body.email,
             to: "infraredbob@gmail.com",
-            subject: req.body.name,
+            subject: `${req.body.name} ${req.body.email}`,
             text: req.body.content
         };
 
