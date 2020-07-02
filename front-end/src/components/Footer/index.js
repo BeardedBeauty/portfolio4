@@ -3,13 +3,23 @@ import api from "../../utils/api";
 import "./style.css";
 
 function Footer(props) {
-    const [name, box1] = useState("")
-    const [email, box2] = useState("")
-    const [content, box3] = useState("")
+    const [name, box1] = useState("");
+    const [email, box2] = useState("");
+    const [content, box3] = useState("");
+    const [bannerno, success] = useState(false);
+    const [banneryes, tryagain] = useState(false);
 
     const message = () => {
-        api.sendMessage({ name, email, content });
-    }
+        if (name && email && content) {
+            api.sendMessage({ name, email, content })//.then((res) => console.log(res));
+            success(true);
+            tryagain(false);
+        }
+        else {
+            tryagain(true);
+            success(false);
+        };
+    };
 
     return (
         <footer>
@@ -20,6 +30,9 @@ function Footer(props) {
             <div id="footerContainer" className="freight">
                 <div className="intermodal">
                     <div className="messageContainer">
+                        {bannerno && <div className="banner success">EMAIL SENT</div>}
+                        {banneryes && <div className="banner tryagain">Error, please try again</div>}
+                        <br />
                         <form action="">
                             <label for="name">name</label>
                             <input className="contactInput trans" type="text" id="name" name="name" onChange={q => box1(q.target.value)} />
@@ -28,7 +41,7 @@ function Footer(props) {
                             <input className="contactInput trans" type="text" id="email" name="email" onChange={w => box2(w.target.value)} />
                             <br />
                             <label for="message">message</label>
-                            <textarea className="contactInput trans" id="message" name="messagew" rows="4" onChange={e => box3(e.target.value)}></textarea>
+                            <textarea className="contactInput trans" id="message" name="messagew" onChange={e => box3(e.target.value)}></textarea>
                             <div className="clearfix">
                                 <div className="button2 trans buttonContainer" onClick={message}>SEND</div>
                             </div>

@@ -1,5 +1,5 @@
 .contactInput {
-    width: 100%;
+    width: 105%;
     display: block;
     background-color: #4400c4;
     color: #0be616;
@@ -48,6 +48,26 @@
     text-align: center;
     color: #a6c9ff;
     float: left;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.tryagain {
+    border: 1px solid #df3636;
+    background-color: #ffd3d3;
+    color: #6b1313;
+}
+
+.success {
+    color: #185017;
+    border: 1px solid #3bb33b;
+    background-color: #d3ffd3;
 }
 
 @media screen and (max-width: 999px) {

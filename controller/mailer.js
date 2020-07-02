@@ -22,7 +22,9 @@ module.exports = {
         };
 
         transporter.sendMail(mailOptions, (err, body) => {
-            err ? console.log(err) : res.status(200);
+            console.log(res)
+            if (err) throw err
+            else { res.body = body };
         });
     }
 }
