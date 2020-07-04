@@ -19,9 +19,7 @@ function Nav(props) {
                     </a>
                 </div>
             </nav>
-            <nav className="mobilenav">
-                <p>|||</p>
-            </nav>
+            <nav className="mobilenav"></nav>
         </>
     )
 }
