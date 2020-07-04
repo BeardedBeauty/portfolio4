@@ -2,6 +2,10 @@ ul {
     padding-left: 0%;
 }
 
+div.internal {
+    cursor: pointer;
+}
+
 .btnn{
     display: inline-block;
     border: none;
@@ -64,7 +68,7 @@ ul {
     height: 60px;
     /* padding: 1rem; */
     /* background: var(--primary-color); */
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -163,4 +167,10 @@ ul {
     color: inherit;
     text-decoration: none;
     transition: color 0.2s ease;
+}
+
+@media screen and (max-width: 999px) {
+    .menu-wrap .hamburger{
+        display: flex;
+    }
 }

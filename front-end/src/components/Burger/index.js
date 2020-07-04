@@ -10,10 +10,11 @@ function Burger(props) {
                 <div>
                     <div>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">B</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><div className="internal" onClick={props.top}>Top</div></li>
+                            <li><div className="internal" onClick={props.portfolio}>Portfolio</div></li>
+                            <li><div className="internal" onClick={props.contact}>Contact</div></li>
+                            <li><a href="https://www.linkedin.com/in/john-ochs-b67b32160/">Linkedin</a></li>
+                            <li><a href="https://github.com/BeardedBeauty">Github</a></li>
                         </ul>
                     </div>
                 </div>

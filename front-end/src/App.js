@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from "./components/Nav/index";
 import Home from "./pages/Home";
 import Burger from "./components/Burger";
-import { Element, animateScroll as scroller } from "react-scroll";
+import { DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import './App.css';
 
 class App extends React.Component {
@@ -47,7 +47,10 @@ class App extends React.Component {
 	render() {
 		return (
 			<>
-				<Burger />
+				<Burger
+					portfolio={this.scrollToPortfolio}
+					contact={this.scrollToContact}
+					top={this.scrollToTop} />
 				<Nav
 					nav={this.state.nav}
 					portfolio={this.scrollToPortfolio}
