@@ -12,6 +12,7 @@ import mac from "../../assets/mac.png";
 import tm3k from "../../assets/tm3k.png";
 import wgs from "../../assets/wgs.png";
 import facepalm from "../../assets/facepalm.png";
+import demo from "../../assets/SHdemo.png";
 
 function Home(props) {
     return (
@@ -23,7 +24,7 @@ function Home(props) {
             </div>
             <div className="loco">
                 <div className="header">
-                    <p id="headerTitle">{"<John Ochs/>"}</p>
+                    <p id="headerTitle">{"John Ochs"}</p>
                     <div className="subheader smol">
                         <p className="sub">Full-Stack Web Developer</p>
                         <p className="sub">Freelance | Full Time | Contract</p>
@@ -54,18 +55,21 @@ function Home(props) {
                 </div>
                 <div className="subtitle">
                     {props.portfolio}
-                    <p className="miniTitle">{"<Portfolio/>"}</p>
+                    <p className="miniTitle">{"Portfolio"}</p>
                 </div>
                 <div id="portfolio" className="freight">
                     <div className="intermodal">
                         <div className="subMiniTitle">
-                            <p>{`{Professional Projects}`}</p>
+                            <p>{`Professional Projects`}</p>
                         </div>
                         <Project source={wgs} title={"Write Guy Services"} link={"https://writeguyservices.herokuapp.com/"} />
                         <Project source={mac} title={"Marty's Arts Continuum"} link={"http://www.martysartscontinuum.com"} />
+                        <Project source={demo} title={"Swanson Health Homepage Demo"} link={"https://determined-noether-6919c6.netlify.app"} />
+                        <div className="clearfix"></div>
                         <div className="subMiniTitle">
-                            <p>{`{Personal Projects}`}</p>
+                            <p>{`Personal Projects`}</p>
                         </div>
+                        {/* <Project source={mac} title={"Sezzle Calc Chat App"} link={"http://www.martysartscontinuum.com"} /> */}
                         <Project source={bookke} title={"Bøokké"} link={"https://bookkemark.herokuapp.com"} gitlink={"https://github.com/BeardedBeauty/BookFinder"} />
                         <Project source={bandaid} title={"Band Aid"} link={"https://ryanholt22.github.io/Band-Aid/"} gitlink={"https://github.com/ryanholt22/Band-Aid"} />
                         <Project source={cheese} title={"Shuffled Cheese"} link={"https://writeguyservices.herokuapp.com/"} gitlink={"https://github.com/BeardedBeauty/Shuffleables"} />

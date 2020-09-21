@@ -11,7 +11,7 @@ function Footer(props) {
 
     const message = () => {
         if (name && email && content) {
-            api.sendMessage({ name, email, content })//.then((res) => console.log(res));
+            api.sendMessage({ name, email, content });
             success(true);
             tryagain(false);
         }
@@ -25,7 +25,7 @@ function Footer(props) {
         <footer>
             <div className="subtitle">
                 {props.scroll}
-                <p className="miniTitle">{"<Contact/>"}</p>
+                <p className="miniTitle">{"Contact"}</p>
             </div>
             <div id="footerContainer" className="freight">
                 <div className="intermodal">
