@@ -4,7 +4,7 @@ import Footer from "../../components/Footer"
 import "./style.css";
 import bgimg from "../../assets/bg.jpg";
 import me from "../../assets/tree2.png";
-import resume from "../../assets/John Ochs Résumé.pdf";
+import resume from "../../assets/resume 2021 dev.pdf";
 import bookke from "../../assets/bookke.png";
 import bandaid from "../../assets/bandaid.png";
 import cheese from "../../assets/cheese.png";
@@ -72,7 +72,7 @@ function Home(props) {
                         {/* <Project source={mac} title={"Sezzle Calc Chat App"} link={"http://www.martysartscontinuum.com"} /> */}
                         <Project source={bookke} title={"Bøokké"} link={"https://bookkemark.herokuapp.com"} gitlink={"https://github.com/BeardedBeauty/BookFinder"} />
                         <Project source={bandaid} title={"Band Aid"} link={"https://ryanholt22.github.io/Band-Aid/"} gitlink={"https://github.com/ryanholt22/Band-Aid"} />
-                        <Project source={cheese} title={"Shuffled Cheese"} link={"https://writeguyservices.herokuapp.com/"} gitlink={"https://github.com/BeardedBeauty/Shuffleables"} />
+                        <Project source={cheese} title={"Shuffled Cheese"} link={"https://cheese-click.herokuapp.com/"} gitlink={"https://github.com/BeardedBeauty/Shuffleables"} />
                         <Project source={tm3k} title={"Taskmaster3000"} link={"https://taskmaster3000.herokuapp.com"} gitlink={"https://github.com/BeardedBeauty/Boards-of-Canada"} />
                         <Project source={facepalm} title={"FacePalm"} link={"https://face--palm.herokuapp.com"} gitlink={"https://github.com/BeardedBeauty/FacePalm"} />
                     </div>
