@@ -48,11 +48,11 @@ function Footer(props) {
                             <br /><br /><br />
                         </form>
                     </div>
-                    <div id="certbox">
+                    {/* <div id="certbox">
                         <iframe frameborder="0" scrolling="no" src="https://umn.credly.com/embed.html#/?member_badge_id=23102523" width="200" height="230"></iframe>
                         <div className="clearfix"><br /></div>
                         Certified Web Developer from the University of Minnesota
-                    </div>
+                    </div> */}
                     <div id="infobox">
                         <p>John Ochs</p>
                         <p>Full Stack Web Developer</p>
