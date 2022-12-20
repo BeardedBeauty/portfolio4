@@ -27,9 +27,25 @@ function Footer(props) {
                 {props.scroll}
                 <p className="miniTitle">{"Contact"}</p>
             </div>
+            <div className="subtitle">
+                <div className="clearfix">
+                    <div className="buttonRack">
+                        <div className="buttonBrick">
+                            <a href="mailto: john.w.ochs0@gmail.com">
+                                <div className="button2 trans">email</div>
+                            </a>
+                        </div>
+                        <div className="buttonBrick">
+                            <a href="tel:+19522157440">
+                                <div className="button2 trans">phone</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="footerContainer" className="freight">
                 <div className="intermodal">
-                    <div className="messageContainer">
+                    {/* <div className="messageContainer">
                         {bannerno && <div className="banner success">EMAIL SENT</div>}
                         {banneryes && <div className="banner tryagain">Error, please try again</div>}
                         <br />
@@ -47,11 +63,12 @@ function Footer(props) {
                             </div>
                             <br /><br /><br />
                         </form>
-                    </div>
+                    </div> */}
                     {/* <div id="certbox">
                         <iframe frameborder="0" scrolling="no" src="https://umn.credly.com/embed.html#/?member_badge_id=23102523" width="200" height="230"></iframe>
                         <div className="clearfix"><br /></div>
                         Certified Web Developer from the University of Minnesota
+                        Fuck you U of M for giving me this shit certificate and the badge doesnt even work
                     </div> */}
                     <div id="infobox">
                         <p>John Ochs</p>
@@ -63,7 +80,7 @@ function Footer(props) {
             </div>
             <div id="footerContainer2" className="freight">
                 <div className="intermodal">
-                    <h6>© John Ochs 2020</h6>
+                    <h6>© John Ochs 2022</h6>
                 </div>
                 <div className="clearfix"><br /></div>
             </div>
