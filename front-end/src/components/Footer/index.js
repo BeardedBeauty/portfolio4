@@ -56,7 +56,7 @@ function Footer(props) {
                     <div id="infobox">
                         <p>John Ochs</p>
                         <p>Full Stack Web Developer</p>
-                        <p>952 • 215 • 7440</p>
+                        <p>952 • 215 • 7440</p>
                         <br /><br /><br /><br /><br />
                     </div>
                 </div>
