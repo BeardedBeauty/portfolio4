@@ -1,25 +1,25 @@
 import React, { useState } from "react";
-import api from "../../utils/api";
+// import api from "../../utils/api";
 import "./style.css";
 
 function Footer(props) {
-    const [name, box1] = useState("");
-    const [email, box2] = useState("");
-    const [content, box3] = useState("");
-    const [bannerno, success] = useState(false);
-    const [banneryes, tryagain] = useState(false);
+    // const [name, box1] = useState("");
+    // const [email, box2] = useState("");
+    // const [content, box3] = useState("");
+    // const [bannerno, success] = useState(false);
+    // const [banneryes, tryagain] = useState(false);
 
-    const message = () => {
-        if (name && email && content) {
-            api.sendMessage({ name, email, content });
-            success(true);
-            tryagain(false);
-        }
-        else {
-            tryagain(true);
-            success(false);
-        };
-    };
+    // const message = () => {
+    //     if (name && email && content) {
+    //         api.sendMessage({ name, email, content });
+    //         success(true);
+    //         tryagain(false);
+    //     }
+    //     else {
+    //         tryagain(true);
+    //         success(false);
+    //     };
+    // };
 
     return (
         <footer>
